@@ -1,0 +1,175 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+
+<div class="container my-2">
+    <div class="row">
+        <div class="col-md-8">
+            <nav aria-label="breadcrumb" class="breadcrumb-nav">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Category</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Subcategory</li>
+                </ol>
+            </nav>
+        </div>
+        <div class="col-md-4">
+            <div class="filtering-options">
+                <div class="filter-heading">
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#filterModal"><i
+                            class="fas fa-filter"></i> Filter</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <!-- Product 1 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-img-top">
+                    <img src="https://via.placeholder.com/500" class="img-fluid" alt="Product 1">
+                    <button class="wishlist-btn"><i class="fas fa-heart"></i></button>
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">Product Name</h4>
+                    <p class="card-text">Product Description</p>
+                    <p class="card-price">$19.99</p>
+                    <button class="btn btn-primary"><i class="fas fa-cart-plus"></i><span> Add to Cart</span></button>
+                    <button class="btn btn-info"><i class="fas fa-shopping-bag"></i> Buy</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-img-top">
+                    <img src="https://via.placeholder.com/500" class="img-fluid" alt="Product 1">
+                    <button class="wishlist-btn"><i class="fas fa-heart"></i></button>
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">Product Name</h4>
+                    <p class="card-text">Product Description</p>
+                    <p class="card-price">$19.99</p>
+                    <button class="btn btn-primary"><i class="fas fa-cart-plus"></i><span> Add to Cart</span></button>
+                    <button class="btn btn-info"><i class="fas fa-shopping-bag"></i> Buy</button>
+                </div>
+            </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-img-top">
+                    <img src="https://via.placeholder.com/500" class="img-fluid" alt="Product 1">
+                    <button class="wishlist-btn"><i class="fas fa-heart"></i></button>
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">Product Name</h4>
+                    <p class="card-text">Product Description</p>
+                    <p class="card-price">$19.99</p>
+                    <button class="btn btn-primary"><i class="fas fa-cart-plus"></i><span> Add to Cart</span></button>
+                    <button class="btn btn-info"><i class="fas fa-shopping-bag"></i> Buy</button>
+                </div>
+            </div>
+        </div>
+        <!-- ... -->
+
+    </div>
+</div>
+<div class="pagination-container">
+    <nav aria-label="Page navigation">
+        <ul class="pagination">
+            <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+            </li>
+            <li class="page-item active" aria-current="page">
+                <span class="page-link">1<span class="sr-only">(current)</span></span>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">...</a></li>
+            <li class="page-item"><a class="page-link disabled" href="#">10</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<div class="top-brands my-5">
+    <h3>Top Brands</h3>
+    <div class="brand-scroll-container">
+        <div class="brand-logo"><img src="google.svg" alt="Google"></div>
+        <div class="brand-logo"><img src="openai.svg" alt="OpenAI"></div>
+        <div class="brand-logo"><img src="facebook.svg" alt="Facebook"></div>
+        <div class="brand-logo"><img src="amazon.svg" alt="Amazon"></div>
+        <!-- Add more brand logos here -->
+    </div>
+</div>
+
+<div class="container my-4">
+    <div class="trending-products">
+        <h3>Trending Products</h3>
+        <div class="product-scroll-container">
+            <div class="product-card">
+                <img src="https://via.placeholder.com/400" alt="Product 1">
+                <div class="product-details">
+                    <h4>Product 1</h4>
+                    <p>$19.99</p>
+                    <button class="view-button">View</button>
+                </div>
+            </div>
+            <!-- More product cards here -->
+        </div>
+    </div>
+</div>
+
+<!--Modals -->
+<!-- Modal for Filtering Options -->
+<div class="modal fade" id="filterModal" tabindex="-1" role="dialog" aria-labelledby="filterModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="filterModalLabel">Filter Options</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Filtering options go here -->
+                <div class="form-group">
+                    <label for="quantity">Quantity</label>
+                    <select class="form-control" id="quantity">
+                        <option value="kg">Kg</option>
+                        <option value="grams">Grams</option>
+                        <option value="pounds">Pounds</option>
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="brand">Brand:</label>
+                    <select class="form-control" id="brand">
+                        <option>Brand 1</option>
+                        <option>Brand 2</option>
+                        <!-- Add more options -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="price">Price Range:</label>
+                    <input type="range" class="form-control-range" id="price">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Apply Filters</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
