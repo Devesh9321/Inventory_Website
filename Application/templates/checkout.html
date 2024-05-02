@@ -1,0 +1,141 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+<div class="container mt-5">
+    <h2>Checkout</h2>
+    <div class="row">
+        <div class="col-md-8">
+            <div class="tab-content">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#shipping-tab">Shipping Information <i
+                                class="fas fa-chevron-right"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#payment-tab"> Payment Details </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#v-pills-track-order"><i
+                                class="fas fa-shipping-fast"></i> Track Order</a>
+                    </li>
+
+                </ul>
+
+                <div id="shipping-tab" class="tab-pane fade show active">
+                    <!-- Shipping Information Form -->
+                    <h4>Shipping Information</h4>
+                    <form>
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" class="form-control" id="fullName" placeholder="Enter your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email address">
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <input type="text" class="form-control" id="address" placeholder="Enter your address">
+                        </div>
+                        <div class="form-group">
+                            <label for="city">City</label>
+                            <input type="text" class="form-control" id="city" placeholder="Enter your city">
+                        </div>
+                        <!-- Add more fields as needed -->
+                        <button type="submit" class="btn btn-primary">Proceed to Payment</button>
+                    </form>
+                </div>
+                <div id="payment-tab" class="tab-pane fade">
+                    <div class="card mb-4">
+                        <div class="card-header">Payment Details</div>
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="cardNumber">Card Number</label>
+                                    <input type="text" class="form-control" id="cardNumber"
+                                        placeholder="Enter your card number">
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-md-6">
+                                        <label for="expiryDate">Expiration Date</label>
+                                        <input type="text" class="form-control" id="expiryDate" placeholder="MM/YY">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="cvv">CVV</label>
+                                        <input type="text" class="form-control" id="cvv" placeholder="Enter CVV">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="paymentMethod">Payment Method</label>
+                        <div class="d-flex">
+                            <!-- Paytm -->
+                            <div class="mr-3">
+                                <input type="radio" id="paytm" name="paymentMethod" value="paytm">
+                                <label for="paytm"><i class="fab fa-paytm"></i> Paytm</label>
+                            </div>
+                            <!-- PhonePe -->
+                            <div class="mr-3">
+                                <input type="radio" id="phonepe" name="paymentMethod" value="phonepe">
+                                <label for="phonepe"><i class="fab fa-phone"></i> PhonePe</label>
+                            </div>
+                            <!-- Net Banking -->
+                            <div>
+                                <input type="radio" id="netbanking" name="paymentMethod" value="netbanking">
+                                <label for="netbanking"><i class="fas fa-university"></i> Net Banking</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Track Order Tab Content -->
+                <div class="tab-pane fade" id="v-pills-track-order">
+                    <!-- Progress bar for tracking order -->
+                    <h4>Track Order</h4>
+                    <div class="card py-6">
+
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">
+                                <i class="fas fa-box-open"></i> Order Received
+                            </div>
+                            <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50"
+                                aria-valuemin="0" aria-valuemax="100">
+                                <i class="fas fa-warehouse"></i> Processing
+                            </div>
+                            <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75"
+                                aria-valuemin="0" aria-valuemax="100">
+                                <i class="fas fa-shipping-fast"></i> Shipped
+                            </div>
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 100%;"
+                                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                <i class="fas fa-check-circle"></i> Delivered
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-4">
+            <!-- Order Summary -->
+            <h4>Order Summary</h4>
+            <div class="card">
+                <div class="card-body">
+                    <!-- Display order summary details -->
+                    <p>Total Items: <span id="total-items">1</span></p>
+                    <p>Total Cost: <span id="total-cost">$20</span></p>
+                </div>
+                <div class="card-footer">
+                    <!-- Proceed to payment button -->
+                    <button class="btn btn-primary btn-block">Proceed to Payment</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

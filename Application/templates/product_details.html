@@ -2,6 +2,134 @@
 
 {% block content %}
 
-<h1>Hello world</h1>
+<div class="product-detail-page">
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Product Picture -->
+                <div class="product-images">
+                    <div class="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://via.placeholder.com/400" class="d-block w-100" alt="Product Image 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://via.placeholder.com/300" class="d-block w-100" alt="Product Image 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://via.placeholder.com/500" class="d-block w-100" alt="Product Image 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target=".carousel"
+                            data-bs-slide="prev">
+                            <span class="visually-hidden"><i class="fas fa-chevron-left"></i></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target=".carousel"
+                            data-bs-slide="next">
+
+                            <span class="visually-hidden"><i class="fas fa-chevron-right"></i></span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6">
+                <!-- Product Name -->
+                <h1 class="product-name">Product Name</h1>
+
+                <!-- Short Description -->
+                <p class="short-description">A brief description of the product goes here.</p>
+
+                <!-- Price -->
+                <p class="price">Price: $XX.XX</p>
+
+                <!-- Product Availability -->
+                <p class="availability">Availability: In Stock</p>
+
+                <!-- Size/Color Options -->
+                <div class="size-color-options">
+                    <label for="size">Size:</label>
+                    <select id="size">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <label for="color">Color:</label>
+                    <select id="color">
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                    </select>
+                </div>
+
+                <!-- Quantity -->
+                <div class="quantity">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" min="1" value="1">
+                </div>
+
+                <!-- Add to Cart Button -->
+                <button class="btn btn-primary add-to-cart"><i class="fas fa-cart-plus"></i> <span> Add to
+                        Cart</span></button>
+
+                <!-- Add to Wishlist Button -->
+                <button class="btn btn-outline-secondary add-to-wishlist"><i class="fas fa-heart"></i> <span> Add to
+                        Wishlist </span></button>
+            </div>
+        </div>
+
+        <!-- Description -->
+        <div class="description">
+            <h2>Description</h2>
+            <p>Detailed description of the product goes here.</p>
+        </div>
+
+        <!-- Shipping and Return Info -->
+        <div class="shipping-return-info">
+            <h2>Shipping and Return Info</h2>
+            <p>Detailed shipping and return information goes here.</p>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+            <h2>Contact Info</h2>
+            <p>If you have any questions, please contact us at email@example.com or via live chat.</p>
+        </div>
+
+        <div class="container">
+
+            <div class="product-reviews">
+                <h2>Customer Reviews</h2>
+                <div class="review">
+                    <div class="user-info">
+                        <img src="https://via.placeholder.com/20" alt="User Avatar">
+                        <span class="username">John Doe</span>
+                    </div>
+                    <div class="rating">
+                        <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        <span class="date">June 15, 2024</span>
+                    </div>
+                    <p class="comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Proin
+                        non odio nec justo rhoncus eleifend. Vestibulum a magna velit.</p>
+                </div>
+                <div class="review">
+                    <div class="user-info">
+                        <img src="https://via.placeholder.com/20" alt="User Avatar">
+                        <span class="username">John Doe</span>
+                    </div>
+                    <div class="rating">
+                        <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        <span class="date">June 15, 2024</span>
+                    </div>
+                    <p class="comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Proin
+                        non odio nec justo rhoncus eleifend. Vestibulum a magna velit.</p>
+                </div>
+                <!-- Add more reviews as needed -->
+            </div>
+        </div>
+
+
+    </div>
+</div>
 
 {% endblock %}

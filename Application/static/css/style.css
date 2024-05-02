@@ -1269,3 +1269,361 @@ label {
     height: 50px;
     /* Adjust as needed */
 }
+
+
+
+
+/* Styles for product detail page */
+.product-detail-page {
+    padding: 20px;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+}
+
+.product-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.short-description {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.availability {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.size-color-options {
+    margin-bottom: 10px;
+}
+
+.size-color-options select {
+    margin-right: 10px;
+}
+
+.quantity {
+    margin-bottom: 10px;
+}
+
+.add-to-cart,
+.add-to-wishlist {
+    margin-bottom: 10px;
+}
+
+.description,
+.shipping-return-info,
+.contact-info {
+    margin-top: 20px;
+}
+
+.description h2,
+.shipping-return-info h2,
+.contact-info h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Styles for product detail page */
+.product-detail-page {
+    padding: 20px;
+    background-color: var(--color-background);
+    color: var(--color-primary);
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+}
+
+.product-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.short-description {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.availability {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.size-color-options {
+    margin-bottom: 10px;
+}
+
+.size-color-options select {
+    margin-right: 10px;
+}
+
+.quantity {
+    margin-bottom: 10px;
+}
+
+.add-to-cart,
+.add-to-wishlist {
+    margin-bottom: 10px;
+}
+
+.description,
+.shipping-return-info,
+.contact-info {
+    margin-top: 20px;
+}
+
+.description h2,
+.shipping-return-info h2,
+.contact-info h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Root color styles */
+.product-detail-page {
+    --background-color: var(--color-background);
+    --text-color: var(--color-primary);
+    --button-bg-color: var(--color-primary);
+    --button-text-color: #fff;
+    /* white */
+}
+
+.add-to-cart,
+.add-to-wishlist {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+}
+
+.add-to-wishlist {
+    border-color: var(--button-bg-color);
+}
+
+.add-to-cart:hover,
+.add-to-wishlist:hover {
+    background-color: var(--color-primary-light);
+    color: var(--color-primary);
+}
+
+
+/* Styles for product detail page */
+.product-detail-page {
+    padding: 20px;
+    font-family: 'Signika', sans-serif;
+    /* Use Signika font */
+    color: var(--color-primary);
+    /* Use primary text color */
+}
+
+.product-name {
+    font-size: 36px;
+    /* Larger font size for product name */
+    margin-bottom: 20px;
+}
+
+.short-description {
+    font-size: 18px;
+    /* Medium font size for short description */
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 24px;
+    /* Larger font size for price */
+    margin-bottom: 20px;
+}
+
+.availability {
+    font-size: 18px;
+    /* Medium font size for availability */
+    margin-bottom: 20px;
+}
+
+.size-color-options label {
+    font-size: 18px;
+    /* Medium font size for size/color options label */
+}
+
+.size-color-options select {
+    font-size: 16px;
+    /* Smaller font size for select dropdown */
+}
+
+.quantity label {
+    font-size: 18px;
+    /* Medium font size for quantity label */
+}
+
+.quantity input {
+    font-size: 16px;
+    /* Smaller font size for quantity input */
+}
+
+.add-to-cart,
+.add-to-wishlist {
+    font-size: 20px;
+    /* Larger font size for buttons */
+    margin-bottom: 20px;
+}
+
+.description h2,
+.shipping-return-info h2,
+.contact-info h2 {
+    font-size: 24px;
+    /* Larger font size for section headings */
+    margin-bottom: 10px;
+}
+
+.description p,
+.shipping-return-info p,
+.contact-info p {
+    font-size: 16px;
+    /* Medium font size for paragraph text */
+}
+
+.product-images {
+    margin-bottom: 20px;
+}
+
+.carousel-item img {
+    height: 400px;
+    /* Adjust height as needed */
+    object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    /* Adjust the width of control buttons */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    opacity: 0;
+    /* Adjust opacity for control buttons */
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
+}
+
+/* Reviews */
+.product-reviews {
+    margin-top: 40px;
+    font-family: 'Signika', sans-serif;
+    /* Use the desired font */
+    color: var(--color-primary-dark);
+    /* Use the primary text color */
+}
+
+.review {
+    border-bottom: 1px solid var(--color-accent);
+    /* Use an accent color for the border */
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.username {
+    font-weight: bold;
+    color: var(--color-primary);
+    /* Use the primary color for usernames */
+}
+
+.rating {
+    margin-top: 5px;
+}
+
+.stars {
+    color: gold;
+}
+
+.comment {
+    margin-top: 10px;
+    color: var(--color-primary);
+    /* Use the primary color for comments */
+}
+
+/* Checkout Page */
+/* Custom CSS for the Checkout Page */
+.container {
+    font-family: 'Arial', sans-serif;
+}
+
+h2 {
+    color: var(--color-primary);
+}
+
+.form-group label {
+    color: var(--color-primary);
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary-dark);
+}
+
+.card {
+    border: 1px solid var(--color-primary);
+}
+
+.card-body {
+    background-color: var(--color-background);
+}
+
+.card-body p {
+    margin: 0;
+}
+
+/* Vertical Tabs */
+.nav-tabs {
+    border: none;
+}
+
+.nav-tabs .nav-item {
+    margin-bottom: 10px;
+}
+
+.nav-tabs .nav-link {
+    border-radius: 0;
+    padding: 10px 15px;
+}
+
+.tab-content {
+    padding: 20px;
+}
+
+/* Active tab */
+.nav-tabs .nav-link.active {
+    background-color: #f8f9fa;
+    border-left: 3px solid #007bff;
+}

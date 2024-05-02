@@ -17,3 +17,11 @@ def shop():
 @bp.route('/ProductDetails', methods=('GET', 'POST'))
 def productdetails():
     return render_template('/product_details.html')
+
+@bp.route('/cart', methods=('GET', 'POST'))
+def cart():
+    return render_template('/cart.html')
+
+@bp.route('/checkout', methods=('GET', 'POST'))
+def checkout():
+    return render_template('/checkout.html')
