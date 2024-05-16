@@ -1571,54 +1571,49 @@ label {
 
 /* Checkout Page */
 /* Custom CSS for the Checkout Page */
-.container {
+#Checkout .container {
     font-family: 'Arial', sans-serif;
 }
-
-h2 {
+#Checkout .form-group label {
     color: var(--color-primary);
 }
 
-.form-group label {
-    color: var(--color-primary);
-}
-
-.btn-primary {
+#Checkout .btn-primary {
     background-color: var(--color-primary);
     border: none;
 }
 
-.btn-primary:hover {
+#Checkout .btn-primary:hover {
     background-color: var(--color-primary-dark);
 }
 
-.card {
+#Checkout .card {
     border: 1px solid var(--color-primary);
 }
 
-.card-body {
+#Checkout.card-body {
     background-color: var(--color-background);
 }
 
-.card-body p {
+#Checkout .card-body p {
     margin: 0;
 }
 
 /* Vertical Tabs */
-.nav-tabs {
+#Checkout .nav-tabs {
     border: none;
 }
 
-.nav-tabs .nav-item {
+#Checkout .nav-tabs .nav-item {
     margin-bottom: 10px;
 }
 
-.nav-tabs .nav-link {
+#Checkout .nav-tabs .nav-link {
     border-radius: 0;
     padding: 10px 15px;
 }
 
-.tab-content {
+#Checkout .tab-content {
     padding: 20px;
 }
 
